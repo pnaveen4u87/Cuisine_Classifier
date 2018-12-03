@@ -28,6 +28,8 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - SVM Classifier Algorithm
 - Github for version control
 
+## Implementation
+
 ## How to Use
 
 
