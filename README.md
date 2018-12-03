@@ -2,7 +2,7 @@
 
 ## Overview
 Digital news articles has become part and parcel of our lives, heavily used by people to fetch information, express opinions, judgement on any kind of topics. Utilizing the large scale data from these platforms extensively benefits in determining the solutions.
-The lack of system to classify and filter the set of food related articles makes it challenging for users find the desired articles. 
+The lack of system to classify and filter the set of food related articles makes it challenging for the users to find the desired articles. 
 
 In this project, we have built a classifier model which will classify the food receipies into different cuisines types and whether it is vegetarian or non vegetarian recipe based on the ingredients used. 
 
