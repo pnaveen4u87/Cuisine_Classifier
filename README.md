@@ -29,13 +29,13 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - Github for version control
 
 ## Implementation
-- Download the dataset from [Kaggle](https://www.kaggle.com/c/whats-cooking/data).
-- The data is in Json format. Read and store it in dictionary and convert it to dataframe in Python.
-- Do the following feature selection steps
---  Removed the punctuation, digits, content inside parenthesis.
---  Converted everything to lower case 
---  Removed stop words.
---  Performed stemming using Porter Stemmer algorithm.
+- Downloaded the dataset from [Kaggle](https://www.kaggle.com/c/whats-cooking/data).
+- The data is in Json format. Read and stored it in dictionary and convert it to dataframe in Python.
+- Did the following feature selection steps
+  - Removed the punctuation, digits, content inside parenthesis.
+  - Converted everything to lower case 
+  - Removed stop words.
+  - Performed stemming using Porter Stemmer algorithm.
 - Encoded Cuisine column and veg/nonveg column using Label Encoder of sklearn.
 - Converted the ingredients column after feature selection into TFIDF Matrix.
 - Split the data into train and test data in 80:20 ratio.
