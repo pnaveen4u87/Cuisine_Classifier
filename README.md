@@ -6,7 +6,7 @@ The lack of system to classify and filter the set of food related articles makes
 
 In this project, we have built a classifier model which will classify the food receipies into different cuisines based on the ingredients used. 
 
-we have also bulit a web interface to filter and view the classified results and also to act as a interface to navigate to the source food receipe article page.
+we have also bulit a web interface to filter and view the classified results and also to act as a interface to navigate to the source food receipe article.
 
 
 ## Team Members
