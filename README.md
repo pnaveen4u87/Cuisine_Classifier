@@ -16,7 +16,7 @@ we have also bulit a web interface to filter and view the classified results and
 
 
 ## Data
-In this project we are classifying the food reciepe articles available in the [BBC Websit](https://www.bbcgoodfood.com/recipes/category/cuisines).
+In this project we are classifying the food reciepe articles available in the [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines).
 
 For training the classifier model, we used the data set from [Kaggle](https://www.kaggle.com/c/whats-cooking/data).
 
