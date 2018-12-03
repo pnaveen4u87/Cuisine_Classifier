@@ -19,6 +19,7 @@ we have also bulit a web interface to filter and view the classified results and
 
 
 ## Technologies/Algorithm Used
+- Python 3.7.0
 - nltk
 - scikit-learn
 - SVM Classifier Algorithm
