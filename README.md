@@ -41,7 +41,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - Split the data into train and test data in 80:20 ratio.
 - Used different machine learning algorithm to find the algorithm which is having high accurancy in classfying the test data.
 - SVM algorithm performed better for the test data so used SVM algorithm to predict the food articles.
-- Scrapped the news article from [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines) in required format.
+- Scrapped the news food article from [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines) in required format.
 - Converted the ingredients column into TF-IDF matrix similar to the data used for training.
 - Predicted the cuisine using the SVM model built using kaggle data set.
 - Stored the result in CSV and used it as the source for our webpage to filter and display the result.
