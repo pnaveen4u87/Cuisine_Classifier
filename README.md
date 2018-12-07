@@ -36,8 +36,8 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
   - Removed digits.
   - Removed content inside parenthesis.
 - Used rules to add Veg, Non-Veg information to the train data.
+- Removed stop words and converted the words to lowercase using TfidfVectorizer.
 - Converted the ingredients column after feature selection into TF-IDF Matrix using TfidfVectorizer.
-- TfidfVectorizer also remove stop words and converts the words to lowercase.
 - Split the data into train and test data in 80:20 ratio.
 - Used different machine learning algorithm to find the algorithm which is having high accurancy in classfying the test data.
 - SVM algorithm performed better for the test data so used SVM algorithm to predict the food articles.
