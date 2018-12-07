@@ -1,12 +1,12 @@
 # Cuisine Classifier using Text Mining
 
 ## Overview
-Digital news articles has become part and parcel of our lives, heavily used by people to retrieve information, express opinions, judgement on any kind of topics. Utilizing the large scale BIG data from these platforms extensively benefits in performing Data Analysis  solutions.
+Digital news articles have become part and parcel of our lives, heavily used by people to retrieve information, express opinions, judgement on any kind of topics. Utilizing the large-scale BIG data from these platforms extensively benefits in performing Data analysis solutions.
 The lack of system to classify and filter the set of food related articles makes it challenging for the users to find the desired articles. 
 
-In this project, we have built a classifier model which will classify the food receipies into different cuisines types and whether it is vegetarian or non vegetarian recipe based on the ingredients used. 
+In this project, we have built a classifier model which will classify the food recipes into different cuisines types and whether it is vegetarian or non-vegetarian recipe based on the ingredients used. 
 
-we have also bulit a web interface to filter and view the classified results and also to act as a interface to navigate to the source food receipe article.
+we have also built a web interface to filter and view the classified results and to act as an interface to navigate to the source food recipe article.
 
 
 ## Team Members
@@ -30,7 +30,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 
 ## Implementation
 - Downloaded the dataset from [Kaggle](https://www.kaggle.com/c/whats-cooking/data).
-- The data is in Json format. Read and stored it in dictionary and convert it to dataframe in Python.
+- The data is in Json format. Read and stored it in dictionary and convert it to data frame in Python.
 - Did the following feature selection steps using WordNetLemmatizer and regular expression
   - Removed the punctuation
   - Removed digits.
@@ -39,10 +39,10 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - Removed stop words and converted the words to lowercase using TfidfVectorizer.
 - Converted the ingredients column after feature selection into TF-IDF Matrix using TfidfVectorizer.
 - Split the data into train and test data in 80:20 ratio.
-- Used different machine learning algorithm to find the algorithm which is having high accurancy in classfying the test data.
+- Used different machine learning algorithm to find the algorithm which is having high accuracy in classifying the test data.
 - SVM algorithm performed better for the test data so used SVM algorithm to predict the food articles.
 - Scrapped the news food article from [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines) in required format.
-- Converted the ingredients column into TF-IDF matrix similar to the data used for training.
+- Converted the ingredients column into TF-IDF matrix like the data used for training.
 - Predicted the cuisine using the SVM model built using kaggle data set.
 - Stored the result in CSV and used it as the source for our webpage to filter and display the result.
 
