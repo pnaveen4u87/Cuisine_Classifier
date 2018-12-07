@@ -33,7 +33,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - The data is in Json format. Read and stored it in dictionary and convert it to dataframe in Python.
 - Did the following feature selection steps using WordNetLemmatizer and regular expression
   - Removed the punctuation
-  - Remove digits.
+  - Removed digits.
   - Removed content inside parenthesis.
 - Used rules to add Veg, Non-Veg information to the train data.
 - Converted the ingredients column after feature selection into TF-IDF Matrix using TfidfVectorizer.
