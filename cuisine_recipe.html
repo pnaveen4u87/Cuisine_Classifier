@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Cuisine Recipe</title>
+  <meta charset="UTF-8">
+  
+ <script type="text/javascript" charset="UTF-8" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script type="text/javascript" charset="UTF-8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+ <script type="text/javascript" charset="UTF-8" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+  
+ <style>
+    td.details-control {
+    background: url('details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('details_close.png') no-repeat center center;
+}
+</style>
+</head>
+  <body>
+        <div class="table-responsive" style="width:100%">
+                <h1 align="center">Cuisine Recipe</h1>
+ 
+<table id="custabl" class="display" width="100%">
+<thead>
+    <tr class="empty">
+        <tr>
+        <th></th>
+        <th></th>
+        <th>Recipe</th>
+        <th>Cuisine</th>
+        <th>Veg-NonVeg</th>
+        <th>CookTime</th>
+        <th>Effort</th>
+                                               
+    </tr>
+ 
+    <tr class="dropdown">
+            
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Cuisine</th>
+            <th>Veg-NonVeg</th>
+            <th>CookTime</th>
+            <th>Effort</th>
+                                                   
+        </tr>
+  </thead>
+</table>
+</div>
+</body>
+
+<script>
+
+  var pageExecute = {
+
+
+jsonVal:"Null",
+init:function () {
+
+     $.ajax({
+        url:"output.csv",
+        async: false,
+        dataType:"text",
+        success:function(data)
+        {
+            var cuisine_data = data.replace(/, |,�/g, " ").split(/\r?\n|\r/);
+         
+             
+             var result =[];
+             var headers = cuisine_data[0].split(",");
+            
+            for(var count = 1; count < cuisine_data.length; count++)
+            {
+                var obj ={};
+                var currentline = cuisine_data[count].split(",");
+                for(var j=0;j < headers.length;j++){
+                     var temp = headers[j];
+                     temp=temp.replace(/\s/g,'');
+                      obj[temp] = currentline[j];
+                        console.log(temp);
+
+                }
+                console.log(JSON.stringify(obj));
+                result.push(obj);
+               
+            }
+            pageExecute.jsonVal = result;
+            
+           
+        }
+     });
+}
+}
+  $(document).ready(function() {
+    pageExecute.init();
+    var table = $('#custabl').DataTable(
+        {
+         scrollY:"420px",
+        data: pageExecute.jsonVal,
+      
+        columns: [
+        
+        {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": '',
+                "width":"2%"
+        },
+      
+        { 
+            "data": "RecipeImage",
+            "width": "10%" ,
+            "render": function(data, type, row, meta){
+                console.log(data);
+                if(type === 'display'){
+                    data = '<img width="100" height="100" src="https:' + data + ' " ></img>';
+                }
+                
+                return data;
+            }
+        },
+
+        { "data": 'Recipe' ,"width": "10%" ,},
+        { "data": 'Cuisine',"width": "10%" , },
+        { "data": 'Veg-NonVeg' ,"width": "10%" ,},
+        { "data": 'CookTime' ,"width": "10%" ,},
+        { "data": 'Effort',"width": "10%" , }
+     ],
+     "order": [[2, 'asc']],
+     initComplete: function () {
+            this.api().columns([3,4,5,6]).every( function () {
+                var column = this;
+                var select = $('<select><option value=""></option></select>')
+                    .appendTo( $(column.header("dropdown")).empty() )
+                    .on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
+ 
+                        column
+                            .search( val ? '^'+val+'$' : '', true, false )
+                            .draw();
+                    } );
+ 
+                column.data().unique().sort().each( function ( d, j ) {
+                    select.append( '<option value="'+d+'">'+d+'</option>' )
+                } );
+            } );
+        }
+    }
+    );
+        
+// Add event listener for opening and closing details
+$('#custabl tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+ 
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+        }
+    } );
+    
+} );
+
+function format ( d ) {
+    // `d` is the original data object for the row
+    return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+        '<tr>'+
+            '<td>Ingredients:</td>'+
+            '<td>'+d.Ingredients+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Cooking Method:</td>'+
+            '<td>'+d.CookingMethod+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Recipe URL:</td>'+
+            '<td><a href="'+d.RecipeURL+'">'+d.RecipeURL+'</a>'
+        '</tr>'+
+    '</table>';
+}
+
+  </script>
+</html>
+
