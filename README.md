@@ -53,7 +53,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
   - Fork the project  from https://github.com/pnaveen4u87/Cuisine_Classifier
   - Go to settings of the forked repository
   - Scroll down to GitHub Pages  section and select “master branch” under source and save the settings. This  will generate the URL for you to access the Cuisine classifier UI to view and filter your results.
-  
+  ![](Images/GitHubPages.png)  
 - The other option is to download the repository and setup the folder in your machine.
 - If you download the repository and use the project, you will be able to see the results only in CSV and not in the web.
 - This tool is developed using Python 3.7.
@@ -74,6 +74,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - The classified results will be updated in output.csv
 ### User Interface
 - [Cuisine classifier webpage](https://pnaveen4u87.github.io/Cuisine_Classifier/cuisine_recipe.html) is implemented to view the list of recipes, ingredients which are categorized by the classifier to cuisine type and meal type.
+- If you have forked the project, you should access the UI using the URL that is generated  in the GitHub Pages section of your repository settings.
 - UI works as below
   - Page is loaded with datatable with all cuisine and recipe data.
 ![](Images/default_page.png)
