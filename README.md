@@ -53,9 +53,9 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - This tool is developed using Python 3.7.
 - To use the tool make sure you have python and Jupyter notebook installed your machine.
 - The following are the folders/files used by the classifier model
-### Main Folder
-- Classifier.ipynb – Jupyter note book to run the classifier
-- OutPut.csv – CSV file where the results will be saved by the classifier
+  - ### Main Folder
+    - Classifier.ipynb – Jupyter note book to run the classifier
+    - OutPut.csv – CSV file where the results will be saved by the classifier
 ### Main Folder / Data Folder
 - Data folder has 2 folders
   - Train folder which has the train data from Kaggle in json format
