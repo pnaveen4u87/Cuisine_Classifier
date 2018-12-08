@@ -47,6 +47,26 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - Stored the result in CSV and used it as the source for our webpage to filter and display the result.
 
 ## How to Use
+- We have published all the required file in this GitHub repository.
+- Fork the project to your GitHub Id, if you want to use the web to filter and view the result or you can down the repository and setup the folder in you machine
+- If you download the repository and use the project, you will be able to see the results only in CSV and not in the web.
+- This tool is developed using Python 3.7.
+- To use the tool make sure you have python and Jupyter notebook installed your machine.
+- The following are the folders/files used by the classifier model
+### Main Folder
+- Classifier.ipynb – Jupyter note book to run the classifier
+- OutPut.csv – CSV file where the results will be saved by the classifier
+### Main Folder / Data Folder
+- Data folder has 2 folders
+  - Train folder which has the train data from Kaggle in json format
+  - Test folder which has the test data from BBC website in csv format
+- To run the classifier, open the classifier.ipynb in jupyter notebook
+- If you want to provide new training data to the model, you can place the new training data in the train folder in json format like the one already available.
+- Provide the ingredients for the recipes for which you want find the cuisine type in the csv file in test folder
+- Using jupyter notebook run all the chunks of code using Run All option in the cell menu
+- The classified results will be updated in output.csv
+
+
 
 
 ## Limitation
