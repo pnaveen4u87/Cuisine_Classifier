@@ -65,6 +65,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - If you want to provide new training data to the model, you can place the new training data in the train folder in json format like the one already available.
 - Provide the ingredients for the recipes for which you want find the cuisine type in the csv file in test folder
 - Using jupyter notebook run all the chunks of code using Run All option in the cell menu
+![](Images/Jupyter_Runall.png)
 - The classified results will be updated in output.csv
 ### User Interface
 - UI is implemented to view the list of recipes, ingredients which are categorized by the function to cuisine type and meal type
