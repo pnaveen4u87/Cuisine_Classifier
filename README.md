@@ -29,18 +29,16 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - Github for version control
 
 ## Implementation
-- Downloaded the dataset from [Kaggle](https://www.kaggle.com/c/whats-cooking/data).
-- The data is in Json format. Read and stored it in dictionary and convert it to data frame in Python.
-- Did the following feature selection steps using WordNetLemmatizer and regular expression
-  - Removed the punctuation
-  - Removed digits.
-  - Removed content inside parenthesis.
-- Used rules to add Veg, Non-Veg information to the train data.
-- Removed stop words and converted the words to lowercase using TfidfVectorizer.
+- Downloaded the dataset from Kaggle.
+- The data is in Json format. Read and stored the data in dictionary and converted it to data frame.
+- Did the following feature selection steps using WordNetLemmatizer and regular expression 
+  - Removed the punctuation, digits, content inside parenthesis.
+- Used rules to add Veg, Non-Veg information to the training data.
+- Removed stop words, converted the words to lowercase, applied stemming and tokenized the words using TfidfVectorizer.
 - Converted the ingredients column after feature selection into TF-IDF Matrix using TfidfVectorizer.
 - Split the data into train and test data in 80:20 ratio.
 - Used different machine learning algorithm to find the algorithm which is having high accuracy in classifying the test data.
-- SVM algorithm performed better for the test data so used SVM algorithm to predict the food articles.
+- SVM algorithm performed better with 78.70% accuracy for the test data compared to Naïve bayes classifier and Logistic regression, so used SVM algorithm to predict the cuisine type.
 ![](Images/SVM_Metrics.PNG)
 - Scrapped the news food article from [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines) in required format.
 - Converted the ingredients column into TF-IDF matrix like the data used for training.
@@ -48,8 +46,15 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - Stored the result in CSV and used it as the source for our webpage to filter and display the result.
 
 ## How to Use
-- We have published all the required file in this GitHub repository.
-- Fork the project to your GitHub Id, if you want to use the web to filter and view the result or you can down the repository and setup the folder in you machine
+- We have published our work in the below GitHub repository.
+  https://github.com/pnaveen4u87/Cuisine_Classifier
+- Fork the project to your GitHub Id and enable GitHub page in settings for this repository, if you want to use the web to filter and view the results
+- To fork and to enable the GitHub pages follow the steps below
+  - Fork the project  from https://github.com/pnaveen4u87/Cuisine_Classifier
+  - Go to settings of the forked repository
+  - Scroll down to GitHub Pages  section and select “master branch” under source and save the settings. This  will generate the URL for you to access the Cuisine classifier UI to view and filter your results.
+  
+- The other option is to download the repository and setup the folder in your machine.
 - If you download the repository and use the project, you will be able to see the results only in CSV and not in the web.
 - This tool is developed using Python 3.7.
 - To use the tool make sure you have python and Jupyter notebook installed your machine.
