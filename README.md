@@ -65,9 +65,11 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 - Provide the ingredients for the recipes for which you want find the cuisine type in the csv file in test folder
 - Using jupyter notebook run all the chunks of code using Run All option in the cell menu
 - The classified results will be updated in output.csv
-
-
-
+### User Interface
+- UI is implemented to view the list of recipes, ingredients which are categorized by the function to cuisine type and meal type
+- UI works as below
+  - User selects cuisine type, After selecting specific cuisine type, list of recipes , ingredient lists and other attributes displayed in UI, Basically UI shows the output of the model in UI form, where the model/ function actually classified the ingredients to cuisine type and meal type
+  - Similarly User can select meal type as well from UI, which will show the list described above
 
 ## Limitation
 The webpage is a very simplified version as it's just a place to dilever the classification result and ideas. The key part of this project is the classification based on the text data and the web page is just a sample model of the real world scenario. The data used in this project is a small set. In real world as the data scales, the efficiency of the classification may vary.
