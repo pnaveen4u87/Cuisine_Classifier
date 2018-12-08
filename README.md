@@ -42,13 +42,13 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 ![](Images/SVM_Metrics.PNG)
 - Scrapped the news food article from [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines) in required format.
 - Converted the ingredients column into TF-IDF matrix like the data used for training.
-- Predicted the cuisine using the SVM model built using kaggle data set.
+- Predicted the cuisine using the SVM model built using Kaggle data set.
 - Stored the result in CSV and used it as the source for our webpage to filter and display the result.
 
 ## How to Use
 - We have published our work in the below GitHub repository.
-  https://github.com/pnaveen4u87/Cuisine_Classifier
-- Fork the project to your GitHub Id and enable GitHub page in settings for this repository, if you want to use the web to filter and view the results
+  - https://github.com/pnaveen4u87/Cuisine_Classifier
+- If you want to use the webpage to filter and view the results, fork the project to your GitHub Id and enable GitHub page in settings for this repository.
 - To fork and to enable the GitHub pages follow the steps below
   - Fork the project  from https://github.com/pnaveen4u87/Cuisine_Classifier
   - Go to settings of the forked repository
