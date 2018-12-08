@@ -23,8 +23,8 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 
 ## Technologies/Algorithm Used
 - Python 3.7.0
-- nltk
-- scikit-learn
+- NLTK
+- Scikit-learn
 - SVM Classifier Algorithm
 - Github for version control
 
