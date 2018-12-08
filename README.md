@@ -74,7 +74,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 ![](Images/default_page.png)
   - User can select either Cuisine or Veg-NonVeg or CookTime or Effort or all the options, the table will display the result based on user selection. 
 ![](Images/select_options.png)
-  - The expand/collapse button will reveal information on the Ingredients, Cooking Method and Source recipe URL(complete details on the recipe)
+  - The expand/collapse button will reveal information on the Ingredients, Cooking Method and Source recipe URL(link to the recipe)
 ![](Images/expand_collapse.png)
   
 ## Limitation
