@@ -68,7 +68,7 @@ For training the classifier model, we used the data set from [Kaggle](https://ww
 ![](Images/Jupyter_Runall.png)
 - The classified results will be updated in output.csv
 ### User Interface
-- UI is implemented to view the list of recipes, ingredients which are categorized by the classifier to cuisine type and meal type
+- [Cuisine class webpage](https://pnaveen4u87.github.io/Cuisine_Classifier/cuisine_recipe.html) is implemented to view the list of recipes, ingredients which are categorized by the classifier to cuisine type and meal type.
 - UI works as below
   - Page is loaded with datatable with all cuisine and recipe data.
 ![](Images/default_page.png)
