@@ -24,9 +24,9 @@ feedback as required while working on the project.
 
 
 ## Data
-In this project we are classifying the food reciepe articles available in the [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines).
+This project classifies the food reciepe articles available in the [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines).
 
-For training the classifier model, we used the data set from [Kaggle](https://www.kaggle.com/c/whats-cooking/data).
+For training the classifier model, the data sets used are from [Kaggle](https://www.kaggle.com/c/whats-cooking/data).
 
 
 ## Technologies/Algorithm Used
