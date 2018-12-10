@@ -14,7 +14,7 @@ we have also built a web interface to filter and view the classified results and
 - Rama Anem - Ranem2
 - Shanthakumar Subramanian - SS81
 
-All the team members contributed equally to the project, in the areas of idea generation, dataset selection, model building, building web interface and documentation. It was a combined team effort with equal help and co‐ordination from all the
+All the team members contributed to all the parts of the project, in the areas of idea generation, dataset selection, model building, building web interface and documentation. It was a combined team effort with equal help and co‐ordination from all the
 team members.
 
 But to make sure the project is completed on time, each team member acted as a lead for completing one area in the project with help from other 2. Rama Anem took lead for identifying the data source and web scrapping, shanthakumar subramanian took lead for model building and providng output and Naveen Kumar palani took lead in building the web interface. 
