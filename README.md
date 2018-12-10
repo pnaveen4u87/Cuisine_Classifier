@@ -11,8 +11,8 @@ we have also built a web interface to filter and view the classified results and
 
 ## Team Members
 - Naveen kumar Palani - Npalani3
-- Rama Anem - Ranem2
 - Shanthakumar Subramanian - SS81
+- Rama Anem - Ranem2
 
 All the team members contributed to all the parts of the project, in the areas of idea generation, dataset selection, model building, building web interface and documentation. It was a combined team effort with equal help and co‐ordination from all the
 team members.
