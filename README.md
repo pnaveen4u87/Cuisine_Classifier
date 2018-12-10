@@ -10,9 +10,9 @@ we have also built a web interface to filter and view the classified results and
 
 
 ## Team Members
-- Naveen kumar Palani
-- Rama Anem
-- Shanthakumar Subramanian
+- Naveen kumar Palani - Npalani3
+- Rama Anem - Ranem2
+- Shanthakumar Subramanian - SS81
 
 
 ## Data
