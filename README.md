@@ -17,7 +17,7 @@ we have also built a web interface to filter and view the classified results and
 All the team members contributed equally to the project for the idea generation, dataset selection, model building, building web interface and documentation. It was a combined team effort with equal help and co‐ordination from all the
 team members.
 
-All the team members are well versed with the course concepts providing much needed ideas and
+All the team members are well versed with the course concepts, providing much needed ideas and
 feedback as required while working on the project.
 
 
