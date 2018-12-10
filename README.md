@@ -4,7 +4,7 @@
 Digital news articles have become part and parcel of our lives, heavily used by people to retrieve information, express opinions, judgement on any kind of topics. Utilizing the large-scale BIG data from these platforms extensively benefits in performing Text Mining, Data analysis solutions.
 The lack of system to classify and filter the set of food related articles makes it challenging for the users to find the desired food articles. 
 
-This project, statistical based classifier model which will classify the food recipes into different cuisines types and whether it is vegetarian or non-vegetarian recipe based on the ingredients used. 
+This project, statistical based classifier model which classifies the food recipes into cuisines types and to dish type i.e vegetarian or non-vegetarian recipe based on the ingredients used. 
 
 we have also built a web interface to filter and view the classified results and to act as an interface to navigate to the source food recipe article.
 
