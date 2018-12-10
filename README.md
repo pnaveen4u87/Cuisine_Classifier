@@ -6,7 +6,7 @@ The lack of system to classify and filter the set of food related articles makes
 
 This project, statistical based classifier model which classifies the food recipes into cuisines types and to dish type i.e vegetarian or non-vegetarian recipe based on the ingredients used. 
 
-There is also web interface implemented to filter and view the classified results and to act as an interface to navigate to the source food recipe article.
+There is also [web interface implemented](https://pnaveen4u87.github.io/Cuisine_Classifier/cuisine_recipe.html)  to filter and view the classified results and to act as an interface to navigate to the source food recipe article.
 
 
 ## Team Members
