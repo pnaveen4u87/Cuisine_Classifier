@@ -1,7 +1,7 @@
 # Cuisine Classifier using Text Mining
 
 ## Overview
-Digital news articles have become part and parcel of our lives, heavily used by people to retrieve information, express opinions, judgement on any kind of topics. Utilizing the large-scale BIG data from these platforms extensively benefits in performing Data analysis solutions.
+Digital news articles have become part and parcel of our lives, heavily used by people to retrieve information, express opinions, judgement on any kind of topics. Utilizing the large-scale BIG data from these platforms extensively benefits in performing Text Mining, Data analysis solutions.
 The lack of system to classify and filter the set of food related articles makes it challenging for the users to find the desired articles. 
 
 In this project, we have built a classifier model which will classify the food recipes into different cuisines types and whether it is vegetarian or non-vegetarian recipe based on the ingredients used. 
