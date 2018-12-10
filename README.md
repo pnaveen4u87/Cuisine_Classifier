@@ -14,6 +14,12 @@ we have also built a web interface to filter and view the classified results and
 - Rama Anem - Ranem2
 - Shanthakumar Subramanian - SS81
 
+All the team members contributed equally to the project for the idea generation, dataset selection, model building, building web interface and documentation. It was a combined team effort with equal help and co‐ordination from all the
+team members.
+
+All the team members are well versed with the course concepts providing much needed ideas and
+feedback as required while working on the project.
+
 
 ## Data
 In this project we are classifying the food reciepe articles available in the [BBC Website](https://www.bbcgoodfood.com/recipes/category/cuisines).
